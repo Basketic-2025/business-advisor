@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Hustler Business Advisor</title>
+    <link rel="manifest" href="/public/manifest.webmanifest" />
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <div class="app-background"></div>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="logo-stack">
+          <div class="logo-mark">H</div>
+          <div class="logo-wording">
+            <strong>Hustler Advisor</strong>
+            <span>Built for Kenyan founders</span>
+          </div>
+        </div>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#solutions">Solutions</a>
+          <a href="#stories">Impact stories</a>
+          <span class="badge badge--offline" id="offlineBadge" aria-live="polite">Offline</span>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Built for hustlers</p>
+          <h1>Everything you need to plan, launch, and grow your hustle.</h1>
+          <p>
+            Generate pricing advice, marketing moves, and cash discipline built for kiosks, mitumba stalls, boda riders,
+            and more—offline-friendly and privacy-first.
+          </p>
+          <div class="hero-actions">
+            <button class="btn" data-tab-trigger="advisor">Start with advisor</button>
+            <button class="btn btn--ghost" data-tab-trigger="plan">Draft business plan</button>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-card">
+              <p class="hero-card__eyebrow">Daily reminder</p>
+            <h3>Pocket the float</h3>
+            <p>Move KES 200 into savings before noon. The rest rides the day’s fuel and stock.</p>
+          </div>
+          <div class="hero-card hero-card--secondary">
+            <p class="hero-card__eyebrow">Today’s target</p>
+            <h3>Meet 12 loyal orders</h3>
+            <p class="hero-card__value">KES 9,800</p>
+            <small>Mix of rides, deliveries, and kiosk bundles.</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="solutions">
+        <div class="solutions__header">
+          <p class="eyebrow">Solutions</p>
+          <h2>One workspace for advisor calls, plans, and finance hygiene.</h2>
+        </div>
+        <div class="solutions__grid">
+          <article>
+            <h3>Advisor</h3>
+            <p>Prompted guidance covering pricing, branding, competition, and marketing—localized to kiosks, mitumba, boda, and more.</p>
+            <span class="tag">AI + Context</span>
+          </article>
+          <article>
+            <h3>Plan</h3>
+            <p>Generate a one-page business plan with risk controls and cash targets that coaches can share with chamas or investors.</p>
+            <span class="tag">Execution map</span>
+          </article>
+          <article>
+            <h3>Cashflow</h3>
+            <p>Track daily expenses, fuel, and float. Works offline, syncs when back online, and keeps totals in shillings.</p>
+            <span class="tag">Offline-first</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="stories" class="stories">
+        <div class="stories__header">
+          <p class="eyebrow">Impact stories</p>
+          <h2>Trusted by kiosks, boda riders, and mitumba hustlers.</h2>
+        </div>
+        <div class="stories__track">
+          <div class="stories__grid marquee">
+            <!-- duplicated set for continuous marquee -->
+            <article>
+              <p class="quote">
+                “Advisor told me what to bundle for Sunday shoppers. Sales jumped and I finally saved for my boda license.”
+              </p>
+              <p class="author">Wairimu · Mitumba & tea kiosk · Gikomba</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Cashflow still records entries offline. When we regained network, everything synced and my chama saw real numbers.”
+              </p>
+              <p class="author">Otieno · Boda rider · Kisumu</p>
+            </article>
+            <article>
+              <p class="quote">
+                “The plan spelled out risks and marketing steps, so my SACCO finally approved my stock loan.”
+              </p>
+              <p class="author">Kendi · Mini wholesale · Embu</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Following the pricing tips, I bundled cooking oil with unga before payday and cleared all stock.”
+              </p>
+              <p class="author">Mwikali · Kiosk · Thika</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Plan reminded me to treat fuel and maintenance as daily expenses. I now save KES 300 float without stress.”
+              </p>
+              <p class="author">Jay · Boda logistics · Eldoret</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Finance tips pushed me to split personal and business M-Pesa lines. Now I see my baking profits clearly.”
+              </p>
+              <p class="author">Mama Triza · Pastries · Nakuru</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Market days go offline often, but the queue keeps my sales safe until the signal returns.”
+              </p>
+              <p class="author">Achieng · Farmers market · Kisii</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Advisor suggested school-uniform bundles with notebooks. Parents loved the predictable price.”
+              </p>
+              <p class="author">Lawrence · Uniform boutique · Rongai</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Every Monday I copy the marketing paragraph into my WhatsApp status. It keeps bookings coming.”
+              </p>
+              <p class="author">Ruth · Salon · Umoja</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Our chama uses the auto-generated plan as our meeting agenda. It keeps everyone accountable.”
+              </p>
+              <p class="author">Chama Turbo · Retail traders · Naivasha</p>
+            </article>
+            <article>
+              <p class="quote">
+                “I printed the cash discipline tips and stuck them by the till. Staff now follow the checklist daily.”
+              </p>
+              <p class="author">Hassan · Wholesale spare parts · Mombasa</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Inventory tips helped me count sacks nightly. Shrinkage dropped by a third in two weeks.”
+              </p>
+              <p class="author">Salma · Agrovet · Kitale</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Advisor told me what to bundle for Sunday shoppers. Sales jumped and I finally saved for my boda license.”
+              </p>
+              <p class="author">Wairimu · Mitumba & tea kiosk · Gikomba</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Cashflow still records entries offline. When we regained network, everything synced and my chama saw real numbers.”
+              </p>
+              <p class="author">Otieno · Boda rider · Kisumu</p>
+            </article>
+            <article>
+              <p class="quote">
+                “The plan spelled out risks and marketing steps, so my SACCO finally approved my stock loan.”
+              </p>
+              <p class="author">Kendi · Mini wholesale · Embu</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Following the pricing tips, I bundled cooking oil with unga before payday and cleared all stock.”
+              </p>
+              <p class="author">Mwikali · Kiosk · Thika</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Plan reminded me to treat fuel and maintenance as daily expenses. I now save KES 300 float without stress.”
+              </p>
+              <p class="author">Jay · Boda logistics · Eldoret</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Finance tips pushed me to split personal and business M-Pesa lines. Now I see my baking profits clearly.”
+              </p>
+              <p class="author">Mama Triza · Pastries · Nakuru</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Market days go offline often, but the queue keeps my sales safe until the signal returns.”
+              </p>
+              <p class="author">Achieng · Farmers market · Kisii</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Advisor suggested school-uniform bundles with notebooks. Parents loved the predictable price.”
+              </p>
+              <p class="author">Lawrence · Uniform boutique · Rongai</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Every Monday I copy the marketing paragraph into my WhatsApp status. It keeps bookings coming.”
+              </p>
+              <p class="author">Ruth · Salon · Umoja</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Our chama uses the auto-generated plan as our meeting agenda. It keeps everyone accountable.”
+              </p>
+              <p class="author">Chama Turbo · Retail traders · Naivasha</p>
+            </article>
+            <article>
+              <p class="quote">
+                “I printed the cash discipline tips and stuck them by the till. Staff now follow the checklist daily.”
+              </p>
+              <p class="author">Hassan · Wholesale spare parts · Mombasa</p>
+            </article>
+            <article>
+              <p class="quote">
+                “Inventory tips helped me count sacks nightly. Shrinkage dropped by a third in two weeks.”
+              </p>
+              <p class="author">Salma · Agrovet · Kitale</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <nav class="tab-list" role="tablist" aria-label="Advisor navigation">
+        <button class="tab-list__item" data-tab="advisor" role="tab" aria-selected="true">Advisor</button>
+        <button class="tab-list__item" data-tab="plan" role="tab" aria-selected="false">Business Plan</button>
+        <button class="tab-list__item" data-tab="tips" role="tab" aria-selected="false">Finance Tips</button>
+        <button class="tab-list__item" data-tab="cashflow" role="tab" aria-selected="false">Cashflow</button>
+      </nav>
+
+      <main>
+        <section id="tab-advisor" data-tab-panel="advisor" role="tabpanel"></section>
+        <section id="tab-plan" data-tab-panel="plan" role="tabpanel" hidden></section>
+        <section id="tab-tips" data-tab-panel="tips" role="tabpanel" hidden></section>
+        <section id="tab-cashflow" data-tab-panel="cashflow" role="tabpanel" hidden></section>
+      </main>
+
+      <section class="commitments">
+        <div class="commitments__copy">
+          <p class="eyebrow">Built for hustlers by hustlers</p>
+          <h2>Modern business planning for small Kenyan shops, riders, and traders.</h2>
+          <p>
+            Privacy-first, offline-tough, and backed by mentors who have operated kiosks, boda fleets, and markets across
+            Kenya.
+          </p>
+        </div>
+        <div class="commitments__grid">
+          <article>
+            <h3>Private & confidential</h3>
+            <p>
+              Your data stays on your device unless you opt in. No shadow training, no sharing with third parties, and a
+              clear export path.
+            </p>
+          </article>
+          <article>
+            <h3>Human support</h3>
+            <p>
+              Need help? Reach volunteer mentors via WhatsApp during business hours. They test the tool in real kiosks
+              and boda stages.
+            </p>
+          </article>
+          <article>
+            <h3>Expertly crafted</h3>
+            <p>
+              Plans and prompts come from veteran entrepreneurs, chama leads, and SACCO credit officers who know what
+              judges look for.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <p>Privacy-first, offline-tough, and ready for judges.</p>
+        <small>© 2025 Hustler Advisor.</small>
+      </footer>
+    </div>
+
+    <script type="module" src="/web/main.js"></script>
+  </body>
+</html>
