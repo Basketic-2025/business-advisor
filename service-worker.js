@@ -1,5 +1,5 @@
-const APP_CACHE = "aihustler-shell-v23";
-const DATA_CACHE = "aihustler-data-v23";
+const APP_CACHE = "aihustler-shell-v24";
+const DATA_CACHE = "aihustler-data-v24";
 const APP_SHELL = [
   "/",
   "/web/index.html",

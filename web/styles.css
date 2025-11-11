@@ -134,6 +134,11 @@ body {
   margin-bottom: var(--spacing-3);
 }
 
+.highlight {
+  text-decoration: underline 3px var(--color-accent);
+  text-decoration-skip-ink: auto;
+}
+
 .hero-actions {
   display: flex;
   gap: var(--spacing-2);
