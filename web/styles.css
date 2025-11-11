@@ -241,7 +241,7 @@ body {
   display: flex;
   gap: var(--spacing-2);
   width: max-content;
-  animation: marquee 70s linear infinite;
+  animation: marquee 150s linear infinite;
 }
 
 .tab-list {
@@ -410,10 +410,10 @@ body {
 }
 
 .commitments {
-  margin: var(--spacing-4) 0;
-  padding: var(--spacing-4);
-  border-radius: 2rem;
-  background: #0b1120;
+  margin: var(--spacing-4) calc(var(--spacing-3) * -1) 0;
+  padding: var(--spacing-4) var(--spacing-3);
+  border-radius: 0;
+  background: #0b7e2f;
   color: #e2e8f0;
 }
 
@@ -456,7 +456,7 @@ body {
   display: flex;
   gap: var(--spacing-2);
   width: max-content;
-  animation: marquee 70s linear infinite;
+  animation: marquee 120s linear infinite;
 }
 
 @keyframes marquee {
