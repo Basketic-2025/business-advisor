@@ -4,7 +4,7 @@
 
 - Bootstrap repo, docs, and CI scripts.
 - Implement SQLite migrations and cashflow CRUD (API + UI) with offline queue stubs.
-- Add mock AI adapter to unblock demos.
+- Add mock AI adapter so guidance works without external dependencies.
 
 ## Week 2
 
@@ -16,4 +16,4 @@
 
 - Add PDF export for business plan.
 - CSV import/export for cashflow data.
-- Lightweight analytics dashboard and curated judge demo path.
+- Lightweight analytics dashboard and curated showcase flow.
