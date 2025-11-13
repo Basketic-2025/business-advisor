@@ -23,7 +23,7 @@ AI Hustler Business Advisor helps Kenyan kiosk owners, boda riders, mitumba trad
 
 ## Screenshots
 
-_TODO: Add annotated screenshots of each tab once UI is finalized._
+
 
 ## Quickstart
 
