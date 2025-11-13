@@ -1,10 +1,11 @@
 # AI Hustler Business Advisor
 
 ```
-- --------------------------------------------- +
-| Microbusiness mentor for Kenyan hustlers      |
-| Pricing - Branding - Competition - Marketing - Cashflow |
-- --------------------------------------------- +
+┌────────────────────────────────────────────────────────┐
+│            AI Hustler Business Advisor                │
+│  Microbusiness mentor for Kenyan hustlers            │
+│Pricing · Branding · Competition · Marketing · Cashflow│
+└────────────────────────────────────────────────────────┘
 ```
 
 **Table of Contents**

@@ -209,6 +209,10 @@ body {
   padding: var(--spacing-2);
   background: #fff;
   box-shadow: 0 12px 25px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
 }
 
 .tag {
@@ -219,6 +223,7 @@ body {
   font-size: 0.75rem;
   background: var(--color-accent-soft);
   color: var(--color-accent);
+  align-self: flex-start;
 }
 
 .stories__grid .quote {
