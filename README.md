@@ -25,12 +25,6 @@ AI Hustler Business Advisor helps Kenyan kiosk owners, boda riders, mitumba trad
 
 _TODO: Add annotated screenshots of each tab once UI is finalized._
 
-## For Judges
-
-- Demo flow lives in `tests/manual/DEMO_SCRIPT.md` and mirrors the judging script.
-- Mock AI responses work out of the box; plugging real OpenAI-compatible APIs only needs env vars.
-- Cashflow tracker shows offline resilience by queueing requests and syncing when back online.
-
 ## Quickstart
 
 - **Install:** `npm i`
