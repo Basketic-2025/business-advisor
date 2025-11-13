@@ -4,7 +4,7 @@ Microbusiness mentor for pricing, branding, competition, marketing, plans, and f
 
 ## Purpose
 
-AI Hustler Business Advisor helps Kenyan kiosk owners, boda riders, mitumba traders, bakers, and smallholder farmers get practical guidance on pricing, branding, competition, marketing, and cashflow discipline�all offline-friendly and privacy-first.
+AI Hustler Business Advisor helps Kenyan kiosk owners, boda riders, mitumba traders, bakers, and smallholder farmers get practical guidance on pricing, branding, competition, marketing, and cashflow discipline all offline-friendly and privacy-first.
 
 ## Features
 
