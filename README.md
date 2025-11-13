@@ -21,7 +21,7 @@ AI Hustler Business Advisor helps Kenyan kiosk owners, boda riders, mitumba trad
 3. Start development server: `npm run dev` then visit `http://localhost:3000`.
 4. Production build: `npm run build && npm start`.
 
-## Screenshots
+
 
 
 
