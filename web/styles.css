@@ -54,28 +54,18 @@ body {
   display: flex;
   align-items: center;
   gap: var(--spacing-2);
+  background: linear-gradient(135deg, #040b1e, #0b1f3d);
+  padding: 0.6rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 16px 30px rgba(4, 11, 30, 0.25);
+  border: 1px solid rgba(226, 232, 240, 0.08);
 }
 
-.logo-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--color-text);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-}
-
-
-.logo-wording strong {
+.logo-image {
+  max-width: 260px;
+  height: auto;
   display: block;
-  font-size: 1rem;
-}
-
-.logo-wording span {
-  font-size: 0.8rem;
-  color: var(--color-subtle);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
 }
 
 .primary-nav {

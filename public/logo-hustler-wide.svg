@@ -1,0 +1,55 @@
+<svg width="520" height="180" viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none">
+    <circle cx="90" cy="90" r="70" stroke="white" stroke-width="8" />
+    <rect x="55" y="105" width="18" height="36" fill="white" rx="2" />
+    <rect x="83" y="90" width="18" height="51" fill="white" rx="2" />
+    <rect x="111" y="72" width="18" height="69" fill="white" rx="2" />
+    <path
+      d="M57 116C98 104 115 86 136 64"
+      stroke="white"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+    <path
+      d="M132 43L168 52L143 74"
+      fill="white"
+    />
+    <path
+      d="M131 41L170 52L143 76"
+      stroke="white"
+      stroke-width="6"
+      stroke-linejoin="round"
+      fill="none"
+    />
+  </g>
+  <text
+    x="190"
+    y="90"
+    fill="white"
+    font-family="'Space Grotesk','Segoe UI',sans-serif"
+    font-size="54"
+    font-weight="600"
+  >
+    Hustler
+  </text>
+  <text
+    x="190"
+    y="140"
+    fill="white"
+    font-family="'Space Grotesk','Segoe UI',sans-serif"
+    font-size="54"
+    font-weight="600"
+  >
+    Advisor
+  </text>
+  <text
+    x="190"
+    y="168"
+    fill="white"
+    font-family="'Space Grotesk','Segoe UI',sans-serif"
+    font-size="22"
+    font-weight="400"
+  >
+    Built for Kenyan founders
+  </text>
+</svg>
