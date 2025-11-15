@@ -64,22 +64,6 @@ function formatKES(cents) {
 
 setContext({ apiFetch, notify, formatKES });
 
-function registerServiceWorker() {
-  if (!("serviceWorker" in navigator)) return;
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/service-worker.js").catch(() => {
-      notify("Service worker registration failed", "error");
-    });
-  });
-
-  navigator.serviceWorker.addEventListener("message", (event) => {
-    const data = event.data || {};
-    if (data.type === "notify" && data.message) {
-      notify(data.message, data.variant || "info");
-    }
-  });
-}
-
 function setActiveTab(target) {
   const tabName = target.dataset.tab;
   document.querySelectorAll("[data-tab]").forEach((btn) => {
@@ -133,4 +117,3 @@ document.addEventListener("DOMContentLoaded", () => {
   bindTabTriggers();
 });
 
-registerServiceWorker();

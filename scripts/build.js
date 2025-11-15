@@ -15,7 +15,6 @@ try {
   mkdirSync(dist, { recursive: true });
   copyDir(join(root, "web"), join(dist, "web"));
   copyDir(join(root, "public"), join(dist, "public"));
-  cpSync(join(root, "service-worker.js"), join(dist, "service-worker.js"));
   console.log("Build complete.");
 } catch (err) {
   console.error("Build failed:", err);

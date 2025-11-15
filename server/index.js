@@ -39,10 +39,6 @@ app.use("/web", express.static(webDir));
 app.use("/public", express.static(publicDir));
 app.use("/tests", express.static(testsDir));
 
-app.get("/service-worker.js", (_req, res) => {
-  res.sendFile(path.join(rootDir, "service-worker.js"));
-});
-
 app.get("/", (_req, res) => {
   res.sendFile(path.join(webDir, "index.html"));
 });
