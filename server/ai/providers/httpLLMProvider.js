@@ -6,7 +6,8 @@ const CLIENT_REFERER =
   process.env.AI_CLIENT_REFERER || "http://localhost:3000";
 const CLIENT_TITLE =
   process.env.AI_CLIENT_TITLE || "AI Hustler Business Advisor";
-const REQUEST_TIMEOUT_MS = Number(process.env.AI_TIMEOUT_MS) || 20000;
+const REQUEST_TIMEOUT_MS =
+  Number(process.env.AI_TIMEOUT_MS) || 60000;
 
 const adviceSystemPrompt =
   'You are AI Hustler, a Kenyan microbusiness mentor. Respond ONLY with JSON: {"pricing":"","branding":"","competition":"","marketing":""}. Keep each value under 80 words, practical, and low-cost. Use Kenyan examples.';
@@ -15,7 +16,7 @@ const planSystemPrompt =
 const financeSystemPrompt =
   'You are AI Hustler, a Kenyan microbusiness finance mentor. Respond ONLY with JSON: {"tips": []}. Each tip under 30 words, practical, covering chamas, float discipline, savings, and inventory tracking. Return 6-8 bullet-level tips.';
 
-async function callOpenAI({ system, user, temperature }) {
+async function callLLM({ system, user, temperature }) {
   if (!API_KEY) {
     throw new Error("Missing AI_API_KEY");
   }
@@ -68,7 +69,7 @@ export async function generateAdvice(payload) {
 Location: ${payload.location}
 Description: ${payload.description}
 Goals: ${payload.goals}`;
-  const { text, tokensUsed } = await callOpenAI({
+  const { text, tokensUsed } = await callLLM({
     system: adviceSystemPrompt,
     user,
     temperature: 0.4,
@@ -95,7 +96,7 @@ export async function generatePlan(payload) {
 Budget: ${payload.budget}
 Skills: ${payload.skills}
 Timeline: ${payload.timeline}`;
-  const { text, tokensUsed } = await callOpenAI({
+  const { text, tokensUsed } = await callLLM({
     system: planSystemPrompt,
     user,
     temperature: 0.5,
@@ -121,7 +122,7 @@ export async function generateFinanceTips(payload = {}) {
   const user = `Audience: Kenyan microbusiness owners\nFocus: chama savings, float discipline, inventory tracking, daily cash habits.${
     payload.context ? ` Extra context: ${payload.context}` : ""
   }`;
-  const { text, tokensUsed } = await callOpenAI({
+  const { text, tokensUsed } = await callLLM({
     system: financeSystemPrompt,
     user,
     temperature: 0.3,

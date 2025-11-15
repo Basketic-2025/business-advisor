@@ -44,7 +44,7 @@
 - `server/ai/llmAdapter.js` exports `generateAdvice(payload)` and `generatePlan(payload)`.
 - Adapter checks `process.env.AI_API_KEY`:
 -  - Missing key ? delegate to `server/ai/mockModel.js` for deterministic guidance.
--  - Key present ? call provider implementation (currently `providers/openai.js`, easily extendable for others).
+-  - Key present ? call provider implementation (currently `providers/httpLLMProvider.js`, easily extendable for others).
 - Both functions return `{ result, tokensUsed }` style payloads so routes can add metadata without knowing provider internals.
 
 ## Mock Fallback

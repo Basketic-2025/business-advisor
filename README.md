@@ -34,7 +34,7 @@
 
 - **Frontend**: Vanilla JS + modular widgets (advisor, plan, finance tips, cashflow) served from `web/` with shared `appContext` helpers and localized strings housed in `web/i18n/en.js`.
 - **Backend**: Node.js + Express API (`/api/advice`, `/api/plan`, `/api/finance-tips`, `/api/cashflow`) with payload validation via Zod and SQLite persistence (`data/app.db`).
-- **AI Adapter**: `server/ai/llmAdapter.js` routes requests to `server/ai/providers/openai.js` when `AI_API_KEY` exists, otherwise the deterministic `mockModel`.
+- **AI Adapter**: `server/ai/llmAdapter.js` routes requests to `server/ai/providers/httpLLMProvider.js` (or OpenRouter) when `AI_API_KEY` exists, otherwise the deterministic `mockModel`.
 - **PWA Shell**: `service-worker.js` precaches assets, applies cache-first to the app shell, and network-first (with cache fallback) to AI endpoints so advice survives offline.
 
 ## Quickstart
